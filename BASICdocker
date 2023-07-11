@@ -1,0 +1,49 @@
+                                         ALL ABOUT DOCKER
+
+Q1) what is docker 
+
+A1) Docker is a platform which provide containzeration concept.
+    
+Q2) What is Dockerfile?
+
+A2) Dockerfile is set of command or task that is going to execute.
+  
+Q3) What is Docker Image?
+
+A3) Docker Image is a output of Dockerfile, and it contains the templates to create container.
+
+Q4) what is Docker Container ?
+
+A4) Container is a package or a bundle of application plus  application libiries and system dependencies.
+
+Q5) What is docker registery?
+
+A5) Docker registry is a store for the images that we build.
+
+Q6) What is difference github and Dockerhub?
+
+A6) Github is a source code management, whereas Docker registery is a image store registery.
+
+Q7) what is the life circle of Containers?
+
+A7) DockerFile------BUILD------> DockerImage-----RUN----->Container
+
+Q8) HOW TO WRITE A DOCKERfile?
+
+A8) FROM ubuntu     -------> source for the image
+    MAINTAINER hari poudel  ------> user
+    RUN apt-get update     -------> command that going execute
+    COPY index.html /tmp   --------> copying file to one dir to another
+
+Q9) What is the benifit of container?
+ 
+A9) Containers are very light in weight.
+    They donot have a complete operating system.
+    container use the resource from the base operating system.
+
+Q10) what are the docker commands?
+     # docker build -t dockerimagename:v1 . ----> it will create docker image with v1tag in current dir
+     # docker images ------> it will list the docker images
+     # docker ps ------> t will list the container
+     # docker run imageid -------> it will create container from docker images
+     # docker rmi imgae id -----> it will delete the image
